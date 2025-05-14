@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retro Fitness Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Fitness Tracker 🕹️</h1>
+    <button id="themeToggle">Toggle Theme</button>
+    <form action="https://formspree.io/f/xqaqgvlq" method="POST">
+      <label>Date: <input type="date" name="date" required></label>
+      <label>Workout: <input type="text" name="workout" required></label>
+      <label>Meals: <textarea name="meals" required></textarea></label>
+      <label>Water (liters): <input type="number" step="0.1" name="water" required></label>
+      <label>Sleep (hours): <input type="number" step="0.1" name="sleep" required></label>
+      <label>Weight (kg): <input type="number" step="0.1" name="weight" required></label>
+      <label>Notes: <textarea name="notes"></textarea></label>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
